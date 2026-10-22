@@ -15,7 +15,7 @@ const OTP = () => {
 
   const handleKeyDown = (e, i) => {
     if (e.key === "Backspace" && !optVal[i] && i > 0) {
-      ref.current[i - 1].focus;
+      ref.current[i - 1].focus()
     }
   };
 
